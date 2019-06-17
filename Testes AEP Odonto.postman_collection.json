@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "2f0860c5-1414-4953-85ac-fe249ff92966",
+		"name": "Testes AEP Odonto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/sinaisvitais",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"identificador\": \"26\",\n\t\"pulso\": \"79\",\n\t\"sistolica\": \"125\",\n\t\"diastolica\": \"95\",\n\t\"freqRespiratoria\": \"17\",\n\t\"temperatura\": \"37.5\",\n\t\"observacao\": \"FELIZ\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/sinaisvitais",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sinaisvitais"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/sinaisvitais/25",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/sinaisvitais/25",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sinaisvitais",
+						"25"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/sinaisvitais/25",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"identificador\": \"25\",\n\t\"pulso\": \"100\",\n\t\"sistolica\": \"140\",\n\t\"diastolica\": \"98\",\n\t\"freqRespiratoria\": \"17\",\n\t\"temperatura\": \"37.5\",\n\t\"observacao\": \"DOIDAO\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/sinaisvitais/25",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sinaisvitais",
+						"25"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/sinaisvitais/26",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/sinaisvitais/26",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sinaisvitais",
+						"26"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
